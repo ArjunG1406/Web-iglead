@@ -1,0 +1,97 @@
+.title{
+    text-decoration: underline;
+}
+img{
+    max-width: 50px;
+    max-height: 20%;
+    background-color: rgb(154, 240, 240);
+    align-items: end;
+    align-content: end;
+    border: 2px solid transparent;
+    border-radius: 20px;
+    }
+    body{
+        font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+        background-color: rgb(225, 249, 249);
+        padding: 5%;
+        font-size: 50;
+        overflow: hidden;
+    }
+    h3{
+    font-family: 'Times New Roman', Times, serif;
+    text-align: center;
+    border: 2px solid  #ffffff ;
+    text-decoration: solid;
+    font-weight: bold;
+    font-size: medium;
+    border-radius: 15px;
+    text-align: center;
+    background-color: rgb(208, 255, 239);
+    }
+    
+h4{
+    color: white;
+    border: 10px;
+    -webkit-text-stroke: 0.5px black;
+}
+    #slideshow {
+        overflow: hidden;
+        height: 500px;
+        width: 728px;
+        margin: 0 auto;
+    }
+    .slide {
+        float: left;
+        height: 50vw;
+        width: 60vh;
+        border-radius: 5%;
+        margin: auto;
+        text-align: end;
+        padding-right: 10px;
+        margin: auto;
+        max-width: 90%;
+        background-position: center;
+        
+    }
+    
+    .slide-wrapper {
+        width: calc(728px * 3);
+        animation: slide 30s ease infinite;
+    }
+    .slide:nth-child(1) {
+        background: url(Wal_1.jpeg);
+        background-size: cover;
+        background-position: center;
+    }
+    
+    .slide:nth-child(2) {
+        background: url(Wal_2.jpeg);
+        background-size: cover;
+        background-position: center;
+    }
+    
+    .slide:nth-child(3) {
+        background: url(Wal_3.jpeg);
+        background-size: cover;
+        background-position: center;
+    }
+    .slide:nth-child(4)
+    {
+        background: url(Wal_1.jpeg);
+    }
+    
+    @keyframes slide {
+        33% {
+            margin-left: 0;
+        }
+    
+        66% {
+            margin-left: calc(-600px * 1);
+        }
+    
+        100% {
+            margin-left: calc(-728px * 0);
+        }
+    
+    }
+    
